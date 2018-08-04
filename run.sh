@@ -483,7 +483,7 @@ main() {
   check_clean_up
   select_smalltalk
   validate_configuration
-  config_vm_dir="${SMALLTALK_CI_VMS}/{config_smalltalk}"
+  config_vm_dir="${SMALLTALK_CI_VMS}/${config_smalltalk}"
   prepare_folders
   export_coveralls_data
   prepare_environment
