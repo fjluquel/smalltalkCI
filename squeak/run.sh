@@ -115,9 +115,9 @@ squeak::get_vm_details() {
       vm_arch="linux32x86"
       vm_file_ext="tar.gz"
       if [[ "${require_spur}" -eq 1 ]]; then
-        vm_path="${config_vm_dir}/cogspurlinuxht/squeak"
+        vm_path="${config_vm_dir}/sqcogspurlinuxht/squeak"
       else
-        vm_path="${config_vm_dir}/coglinuxht/squeak"
+        vm_path="${config_vm_dir}/sqcoglinuxht/squeak"
       fi
       ;;
     "Darwin")
