@@ -171,6 +171,7 @@ squeak::prepare_vm() {
     is_dir "${config_vm_dir}" || mkdir -p "${config_vm_dir}"
     print_info "Extracting virtual machine..."
     extract_file "${target}" "${config_vm_dir}"
+    ls "${config_vm_dir}"
     if ! is_file "${vm_path}"; then
       print_error_and_exit "Unable to set vm up at '${vm_path}'."
     fi
