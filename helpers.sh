@@ -294,7 +294,7 @@ extract_file() {
     unzip "${path}" -d "${target}"
   elif [[ "${path}" == *".dmg" ]]; then
     readonly VOLUME=$(hdiutil attach "${path}" | tail -1 | awk '{print $3}')
-    cp -r "${VOLUME}/" "${target}/"
+    cp -X -R "${VOLUME}/" "${target}/"
     diskutil unmount "${VOLUME}"
   fi
 }
